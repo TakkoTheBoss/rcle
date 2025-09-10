@@ -234,7 +234,7 @@ loop every Δt seconds:
 ***
 
 ## 12. Implementation Guidelines
-- Δt MUST be 200–500 ms  
+- Δt SHOULD be 200–500 ms  
 - g SHOULD be 1  
 - Profiles MUST be signed  
 - Vendor shims MUST expose: `lock_cell`, `set_bandmask`, `force_plmn`  
