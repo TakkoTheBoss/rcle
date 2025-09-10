@@ -31,7 +31,7 @@ RLCE is developed in alignment with the **C6 Discipline** and enforces the **SAI
 ## Documentation
 The full technical specification is maintained in this repository:
 
-- 📄 [`RLCE_Spec_v1.0_extended.md`](./RLCE_Spec_v1.0_extended.md)
+[`Latest RCLE Spec`](.versions/1.0/rcle_1.md)
 
 This includes:
 - Functional description
