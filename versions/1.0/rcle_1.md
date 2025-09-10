@@ -19,7 +19,7 @@ This specification defines Route-Lock Cellular Enforcement (RLCE), a mechanism f
 - Autonomous vehicles and robo-taxis (e.g., Waymo, Cruise)
 - Any safety- or business-critical mobile system relying on cellular connectivity
 
-![[Pasted image 20250910004956.png]]
+![[RCLE_concept.png]]
 
 ***
 
