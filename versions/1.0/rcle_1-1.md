@@ -17,7 +17,7 @@ This specification defines Route-Lock Cellular Enforcement (RLCE), a mechanism f
 - Autonomous vehicles and robo-taxis (e.g., Waymo, Cruise)
 - Any safety- or business-critical mobile system relying on cellular connectivity
 
-All of these modes share a common feature: they follow **static or semi-static routes with repeatable cell patterns**. For example, GoRaleigh buses on Route 100 traverse the same stops and pass through the same TACs every day, making them ideal candidates for RLCE enforcement.
+All of these modes share a common feature: they follow static or semi-static routes with repeatable cell patterns. For example, GoRaleigh buses on Route 100 traverse the same stops and pass through the same TACs every day, making them ideal candidates for RLCE enforcement.
 
 ![RLCE Architecture](./RCLE_concept.png)
 
@@ -26,11 +26,11 @@ All of these modes share a common feature: they follow **static or semi-static r
 ## 2. Rationale
 Cellular networks have been allowed to remain a vast, unguarded blind spot for far too long. The industry has collectively shrugged at the risk, letting flawed trust models persist because “that’s how it’s always been done.” Developers fall back on inherited design patterns that deliberately sidestep the cellular attack surface, and entire sectors operate under the comforting lie that this problem belongs to someone else. That time is over. It is our problem, here and now.  
 
-Despite decades of IMSI catcher research, operational countermeasures remain rare in production systems. Some commercial equipment, like Mikrotik modems, now includes basic cell-lock features — a promising start, but far from a holistic solution. RLCE extends this concept into a rigorous, route-based enforcement framework.  
+Despite decades of IMSI catcher research, operational countermeasures remain rare in production systems. Some commercial equipment, like Mikrotik modems, now includes basic cell-lock features - a promising start, but far from a holistic solution. RLCE extends this concept into a rigorous, route-based enforcement framework.  
 
-IMSI catchers and rogue base stations are not just tools for surveillance. They are weapons that can degrade, disrupt, and deny service to connected vehicles in motion — buses dropping telemetry, freight trains losing signaling integrity, autonomous fleets going dark in the middle of operations. This is not theoretical. These are vulnerabilities that translate directly into safety hazards, operational breakdowns, and public trust failures.  
+IMSI catchers and rogue base stations are not just tools for surveillance. They are weapons that can degrade, disrupt, and deny service to connected vehicles in motion - buses dropping telemetry, freight trains losing signaling integrity, autonomous fleets going dark in the middle of operations. This is not theoretical. These are vulnerabilities that translate directly into safety hazards, operational breakdowns, and public trust failures.  
 
-RLCE answers this threat head-on. It treats cellular conduits as security boundaries in their own right, enforcing C6’s Safety, Availability, Integrity, and Confidentiality at the lowest level where it matters: the connection itself. RLCE does not wait for regulators to catch up, nor does it trust that carriers will design away the risks. Like its sibling CSIV, RLCE assumes no cavalry is coming. It is a technical fix for a technical problem, built in userspace so it can be deployed now — by operators, engineers, and fleets that understand the stakes.  
+RLCE answers this threat head-on. It treats cellular conduits as security boundaries in their own right, enforcing C6’s Safety, Availability, Integrity, and Confidentiality at the lowest level where it matters: the connection itself. RLCE does not wait for regulators to catch up, nor does it trust that carriers will design away the risks. Like its sibling CSIV, RLCE assumes no cavalry is coming. It is a technical fix for a technical problem, built in userspace so it can be deployed now - by operators, engineers, and fleets that understand the stakes.  
 
 This is not a matter of convenience or optimization. It is a matter of refusing to let critical infrastructure remain at the mercy of whoever can power up a rogue cell tower in the wrong place at the wrong time. For example, if a rogue eNodeB were deployed along GoRaleigh Route 100 near RDU, telemetry from airport buses could silently be intercepted or blocked.
 
@@ -40,9 +40,9 @@ This is not a matter of convenience or optimization. It is a matter of refusing 
 ## 3. Normative References
 - 3GPP TS 36.331 (E-UTRA RRC)  
 - 3GPP TS 38.331 (NR RRC)  
-- IEC 62443 (Industrial communication networks — Security)  
+- IEC 62443 (Industrial communication networks - Security)  
 - C6 Discipline v2.0 (Conduit & Zone Cyber-Physical Security)  
-- CENELEC TS 50701 (Railway applications — Cybersecurity)  
+- CENELEC TS 50701 (Railway applications - Cybersecurity)  
 
 ***
 
